@@ -1,0 +1,19 @@
+@media only screen 
+   and (min-width : 320px) {
+   /* Styles here */
+}
+
+@media only screen 
+   and (min-width : 768px) {
+   /* Styles here */
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+   /* Styles here */
+}
+
+@media only screen 
+   and (min-width : 1600px) {
+   /* Styles here */
+}
