@@ -1,2 +1,81 @@
-@import "mediaquery.css";
 @import "globals.css";
+@import "mediaquery.css";
+@import "components.css";
+
+.container {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  -webkit-box-shadow: 14px 10px 27px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 10px 27px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 10px 27px -15px rgba(0, 0, 0, 0.75);
+  color: white;
+  height: 100%;
+  position: relative;
+}
+
+.todoBlock .todo-head {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  gap: 1rem;
+}
+
+.todoBlock .todo-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 30px;
+  gap: 10px;
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 1rem;
+}
+
+.todo-list .todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.todo .btn-group {
+  margin-left: auto;
+}
+.btn-group button {
+  background-color: transparent;
+}
+
+.todo-done{
+  text-decoration: line-through;
+  opacity: 60%;
+}
+
+.todo-head .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-head .flex h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+.todo-head .flex span {
+  font-size: 22px;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 7px;
+}

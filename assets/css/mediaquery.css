@@ -1,19 +1,59 @@
-@media only screen 
-   and (min-width : 320px) {
-   /* Styles here */
+/* mobile */
+@media only screen and (min-width: 320px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .todoBlock {
+    width: 100%;
+    height: 100%;
+  }
+  .todoBlock .todo-head {
+    flex-direction: column;
+  }
+  .todoBlock .todo-list{
+    height: 72vh;
+  }
 }
 
-@media only screen 
-   and (min-width : 768px) {
-   /* Styles here */
+/* tablet */
+@media only screen and (min-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .todoBlock {
+    width: 90%;
+    height: 100%;
+  }
+  .todoBlock .todo-head {
+    flex-direction: column;
+  }
+  .todoBlock .todo-list{
+    height: 750px
+  }
 }
 
-@media only screen 
-   and (min-width : 1200px) {
-   /* Styles here */
+/* laptop */
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 80%;
+  }
+  .todoBlock {
+    width: 100%;
+    height: 75%;
+  }
+  .todoBlock .todo-list{
+    height: 70vh
+  }
 }
 
-@media only screen 
-   and (min-width : 1600px) {
-   /* Styles here */
+/* desktop */
+@media only screen and (min-width: 1600px) {
+  .container {
+    width: 80%;
+  }
+  .todoBlock {
+    width: 100%;
+    height: 75%;
+  }
 }
