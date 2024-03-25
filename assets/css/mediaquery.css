@@ -45,6 +45,9 @@
   .todoBlock .todo-list{
     height: 70vh
   }
+  .todoBlock .todo-head{
+    height: 15% !important;
+  }
 }
 
 /* desktop */

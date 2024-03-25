@@ -20,6 +20,7 @@ input[type="text"]::placeholder{
     height: 1px;
     background-color: #2D2D2D;
     margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .checkmark {
@@ -33,7 +34,7 @@ input[type="text"]::placeholder{
     cursor: pointer;
 }
 .checkmark-done {
-    background-color: #0EA5E9;
+    background-color: #0ee945;
 }
 
 button{

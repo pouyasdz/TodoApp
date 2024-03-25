@@ -2,9 +2,11 @@ class TodoApp {
   form = document.querySelector("form");
   input = document.querySelector("#todo-input");
   todoList = document.querySelector(".todo-list");
+  clockElement = document.querySelector("#clock");
   sesstionID = "todos";
 
   constructor() {
+    this.clock();
     this.read();
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -41,12 +43,12 @@ class TodoApp {
       this.todoList.innerHTML += `
         <div class="todo ${todo.done ? "todo-done" : ""}">
             <span class="checkmark ${todo.done ? "checkmark-done" : ""}" onclick='app.doneTodo("${todo.id}")'></span>
-            <p>${todo.title.substring(0, 20)}${todo.title.length >= 20 ? "..." : ""}</p>
+            <p>${todo.title.substring(0, 17)}${todo.title.length >= 17 ? "..." : ""}</p>
             <div class="btn-group">
               <button style="color: #f97316" onclick='app.update("${
                 todo.id
               }")'>edit</button>
-              /
+              |
               <button style="color: #dc2626" onclick='app.delete("${
                 todo.id
               }")'>delete</button>
@@ -95,6 +97,17 @@ class TodoApp {
 
   setSessionTodos(todos = []) {
     window.sessionStorage.setItem(this.sesstionID, JSON.stringify(todos));
+  }
+
+  clock(){
+    setInterval(()=> {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const clockStr = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    this.clockElement.innerHTML = clockStr;
+    }, 1000)
   }
 }
 

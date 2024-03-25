@@ -54,6 +54,7 @@
 }
 .btn-group button {
   background-color: transparent;
+  font-size: x-small;
 }
 
 .todo-done{
@@ -69,6 +70,10 @@
 .todo-head .flex h1 {
   font-size: 28px;
   font-weight: 900;
+  align-self: self-start;
+}
+.todo-head .flex p {
+  align-self: self-start;
 }
 .todo-head .flex span {
   font-size: 22px;
