@@ -58,7 +58,7 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
-html, body { height: 100%; width: 100%;}
+html, body { height: 100%; width: 100%; overflow: hidden !important;}
 ul {
   list-style: none;
 }
